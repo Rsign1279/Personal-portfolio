@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Viswanath · AI Engineer</title>
+  <meta name="description" content="Rahul Viswanath builds AI wearables, vision systems and AI infrastructure. Drag through the particles, click to explode." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Pixelify+Sans:wght@400;500&family=Unbounded:wght@300;400&family=Geist+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/me.png" as="image" />
+</head>
+<body>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <nav class="nav">
+      <a class="logo" href="#top" aria-label="Home">
+        <svg viewBox="0 0 30 24" aria-hidden="true"><g fill="currentColor">
+          <rect x="0" y="10" width="2" height="14"/><rect x="4" y="6" width="2" height="18"/><rect x="8" y="2" width="2" height="22"/>
+          <rect x="12" y="0" width="2" height="24"/><rect x="16" y="4" width="2" height="20"/><rect x="20" y="8" width="2" height="16"/>
+          <rect x="24" y="12" width="2" height="12"/><rect x="28" y="16" width="2" height="8"/></g></svg>
+        <span>Rahul Viswanath</span>
+      </a>
+      <div class="nav-links">
+        <a href="#world">World</a>
+        <a href="#map">Mind map</a>
+        <a href="#experience">Experience</a>
+      </div>
+      <a class="pill" href="#contact">Get in touch</a>
+    </nav>
+
+    <canvas id="portrait" class="portrait-canvas" aria-hidden="true"></canvas>
+    <h1 class="headline">
+      <span class="line">Turning <em class="px">Ideas</em> Into</span>
+      <span class="line">AI That <em class="px">Matters</em></span>
+    </h1>
+
+    <div class="hero-band">
+      <div class="band-left">
+        <p class="band-title">Hi, I'm Rahul</p>
+        <p class="band-copy">I build AI that leaves the lab: stress-awareness wearables, real-time vision systems and the search infrastructure that engineers use every day.</p>
+        <a class="band-link" href="#map">Explore my projects <span aria-hidden="true">↗</span></a>
+        <div class="mini-cards" id="mini-cards"></div>
+      </div>
+
+      <div class="band-right" id="hero-stats"></div>
+    </div>
+
+    <div class="portrait-wrap" id="portrait-region" role="img" aria-label="Particle portrait of Rahul. Drag across it to push the pixels; click to make it explode.">
+      <button class="badge" id="explode-btn" aria-label="Explode the portrait">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <circle cx="100" cy="100" r="98" class="badge-bg"/>
+          <text><textPath href="#circ">CLICK TO EXPLODE ✦ DRAG THROUGH ME ✦ </textPath></text>
+        </svg>
+        <span class="badge-core"><span class="badge-arrow">↗</span></span>
+      </button>
+      <p class="hint"><span class="dot"></span> Drag across me · Click me to explode</p>
+    </div>
+
+  </section>
+
+  <!-- ============ WORLD ============ -->
+  <section class="world" id="world">
+    <div class="world-copy">
+      <p class="eyebrow">RV / WORLD</p>
+      <h2>Changing The World With <span class="glow">AI.</span></h2>
+      <p class="world-sub">From a high school lab in Bentonville to national stages: wearables for autistic and nonverbal people, vision AI for a cleaner planet, and AI infrastructure for engineers.</p>
+      <div class="world-cta">
+        <a class="btn-light" href="#map">Explore my work</a>
+        <a class="btn-ghost" href="#contact">Contact me</a>
+      </div>
+      <div class="langs">
+        <p>Speaks</p>
+        <div><span>English</span><span>Tamil</span><span>Hindi</span><span>Kannada</span><span>French</span></div>
+      </div>
+    </div>
+    <div class="globe-stage">
+      <canvas id="globe" aria-label="Rotating particle globe with arcs from Bentonville to Atlanta, Dallas, Waterloo and the world. Drag to push the particles, click to explode." role="img"></canvas>
+      <div class="globe-labels" id="globe-labels"></div>
+    </div>
+    <aside class="glass-card" id="globe-feed">
+      <div class="gc-head"><span class="gc-bars"><i></i><i></i></span><span class="gc-search">⌕</span></div>
+      <ul></ul>
+    </aside>
+    <p class="world-hint">Drag across the globe · Click to explode it</p>
+  </section>
+
+  <!-- ============ MIND MAP ============ -->
+  <section class="map-section" id="map">
+    <div class="map-head">
+      <div>
+        <p class="eyebrow dark">RV / MIND MAP</p>
+        <h2>Projects Connected<br/>To Where I'm <em class="px">Going.</em></h2>
+      </div>
+      <p class="map-sub">Every project feeds a goal. Hover a card to trace its connections, drag cards to rearrange, tap to open.</p>
+    </div>
+    <div class="map-legend"><span><i class="lg-p"></i>Project</span><span><i class="lg-g"></i>Goal</span><span><i class="lg-c"></i>Cross-link</span></div>
+    <div class="mindmap" id="mindmap">
+      <div class="mm-grid" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="exp" id="experience">
+    <div class="exp-grid">
+      <div>
+        <p class="eyebrow dark">RV / EXPERIENCE</p>
+        <h2>Where I've <em class="px">Built</em></h2>
+        <ul class="exp-list" id="exp-list"></ul>
+      </div>
+      <div>
+        <div class="awards">
+          <div class="award"><span class="big">10<sup>th</sup></span><p>Nationally, Community Action Project<br/>SkillsUSA NLSC · Atlanta, GA · 2026</p></div>
+          <div class="award"><span class="big">Intl.</span><p>EarthX e-Capital Summit qualifier · 2026</p></div>
+          <div class="award"><span class="big">IBM</span><p>Emerging Technology · Cybersecurity Fundamentals certifications</p></div>
+        </div>
+        <p class="skills-title">Toolkit</p>
+        <div class="skills" id="skills"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <footer class="contact" id="contact">
+    <p class="eyebrow">RV / CONTACT</p>
+    <h2>Let's build <em class="px">what's next.</em></h2>
+    <div class="contact-row">
+      <a class="btn-light" id="mail-link" href="#">Email me</a>
+      <a class="btn-ghost" id="li-link" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <p class="foot">© <span id="year"></span> Rahul Viswanath · Bentonville, AR</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

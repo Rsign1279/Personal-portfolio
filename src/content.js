@@ -5,6 +5,8 @@ export const profile = {
   first: 'Rahul',
   email: 'rahul.n.viswanath@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rahulnviswanath',
+  github: 'https://github.com/Rsign1279',
+  resume: '/resume.pdf',
   location: 'Bentonville, AR',
 };
 

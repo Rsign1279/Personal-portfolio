@@ -37,4 +37,17 @@ $('#skills').innerHTML = skills.map((s) => `<span>${esc(s)}</span>`).join('');
 // ---- contact ----
 $('#mail-link').href = `mailto:${profile.email}`;
 $('#li-link').href = profile.linkedin;
+$('#gh-link').href = profile.github;
+$('#flip-li').href = profile.linkedin;
+
+// ---- 3D flip scene (three.js is loaded only when the section gets close) ----
+const flipStage = $('#flip-stage');
+const flipIO = new IntersectionObserver((entries) => {
+  if (!entries.some((e) => e.isIntersecting)) return;
+  flipIO.disconnect();
+  import('./flip3d.js')
+    .then(({ initFlip }) => initFlip(flipStage, $('#flip-labels'), { linkedin: profile.linkedin, github: profile.github, resume: profile.resume }))
+    .catch(() => flipStage.classList.add('no-webgl'));
+}, { rootMargin: '600px' });
+flipIO.observe(flipStage);
 $('#year').textContent = new Date().getFullYear();

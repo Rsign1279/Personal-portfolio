@@ -116,8 +116,8 @@ export function loopWhileVisible(el, frame) {
     frame(dt, t);
     raf = visible ? requestAnimationFrame(tick) : 0;
   };
-  const io = new IntersectionObserver(([e]) => {
-    visible = e.isIntersecting;
+  const io = new IntersectionObserver((entries) => {
+    visible = entries[entries.length - 1].isIntersecting;
     if (visible && !raf) { last = 0; raf = requestAnimationFrame(tick); }
   }, { rootMargin: '100px' });
   io.observe(el);

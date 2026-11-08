@@ -91,7 +91,7 @@ export const mapEdges = [
 export const experience = [
   { when: 'Jun 2026 – Now', role: 'Computer Infrastructure Engineering Intern', org: 'Thorbole Simulation Technologies' },
   { when: 'Sep 2025 – Now', role: 'Founder & Technical Lead', org: 'PATHOS' },
-  { when: 'Nov 2025 – Jul 2026', role: 'Student Inventor & Chief AI Officer', org: 'EverGreen' },
+  { when: 'Sep 2025 – Aug 2026', role: 'Student Inventor & Chief AI Officer', org: 'EverGreen' },
   { when: 'Jan 2026 – Now', role: 'Marketing Intern & Tech Lead', org: 'Women+ in Technology of Northwest Arkansas' },
   { when: 'Aug 2025 – Now', role: 'President', org: 'Tech4All Club' },
 ];
